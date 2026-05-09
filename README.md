@@ -17,16 +17,6 @@ brew services start termcopy
 - Joins lines that were split by terminal wrapping
 - Preserves intentional structure: paragraph breaks, numbered/bullet lists, code blocks, headers
 
-## How it works
-
-Terminal text wrapping inserts real newline characters that are indistinguishable from intentional line breaks. termCopy uses heuristics to tell them apart:
-
-- Lines at the detected terminal width are joined (terminal wrap)
-- Lines ending with : are kept (introducing a list/block)
-- Sentence-ending punctuation + uppercase next line is kept (new paragraph)
-- List items, code fences, headers, blank lines are always preserved
-- Short lines (< 45 chars) are kept (intentional break)
-
 ## Uninstall
 
 ```
