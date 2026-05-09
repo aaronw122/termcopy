@@ -1,6 +1,6 @@
 # termCopy
 
-Fixes copy-paste from terminal apps. When TUI apps like Claude Code render text, they insert hard newlines at the terminal width. Pasting into editors, emails, or notes produces broken paragraphs with extra line breaks. termCopy watches your clipboard and automatically unwraps terminal-wrapped text while preserving lists, code blocks, and paragraph breaks.
+When TUI apps like Claude Code render text, they insert hard newlines at the terminal width. Pasting the text results in broken paragraphs with extra line breaks. termCopy watches your clipboard and automatically unwraps terminal-wrapped text while preserving lists, code blocks, and paragraph breaks.
 
 ## Install
 
@@ -16,16 +16,6 @@ brew services start termcopy
 - Only processes copies from terminal apps (cmux, Ghostty, Terminal, iTerm2, Kitty, WezTerm, Warp, Alacritty)
 - Joins lines that were split by terminal wrapping
 - Preserves intentional structure: paragraph breaks, numbered/bullet lists, code blocks, headers
-
-## Manual usage
-
-```
-# Run in foreground
-termcopy
-
-# Test with current clipboard contents
-termcopy --test
-```
 
 ## How it works
 
