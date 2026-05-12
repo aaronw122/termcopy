@@ -15,6 +15,7 @@ let terminalApps: Set<String> = [
     "com.github.wez.wezterm",
     "dev.warp.Warp-Stable",
     "io.alacritty",
+    "com.microsoft.VSCode",
 ]
 
 // MARK: - Regex patterns
