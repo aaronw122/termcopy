@@ -6,16 +6,51 @@ import Foundation
 let maxProcessSize = 100_000
 
 let terminalApps: Set<String> = [
-    "com.cmuxterm.app",
-    "com.cmuxterm.app.debug",
-    "com.mitchellh.ghostty",
+    // Standalone terminals
     "com.apple.Terminal",
+    "com.mitchellh.ghostty",
     "com.googlecode.iterm2",
     "net.kovidgoyal.kitty",
     "com.github.wez.wezterm",
     "dev.warp.Warp-Stable",
     "io.alacritty",
+    "co.zeit.hyper",
+    "com.herodevs.tabby",
+    "org.tabby",
+    "com.raggesilver.BlackBox",
+
+    // VS Code variants
     "com.microsoft.VSCode",
+    "com.microsoft.VSCodeInsiders",
+    "com.visualstudio.code.oss",
+    "com.todesktop.230313mzl4w4u92",  // Cursor
+
+    // JetBrains IDEs (embedded terminal)
+    "com.jetbrains.intellij",
+    "com.jetbrains.intellij.ce",
+    "com.jetbrains.WebStorm",
+    "com.jetbrains.pycharm",
+    "com.jetbrains.pycharm.ce",
+    "com.jetbrains.goland",
+    "com.jetbrains.CLion",
+    "com.jetbrains.PhpStorm",
+    "com.jetbrains.rubymine",
+    "com.jetbrains.rider",
+    "com.jetbrains.fleet",
+
+    // Other editors with terminals
+    "dev.zed.Zed",
+    "dev.zed.Zed-Preview",
+    "com.sublimetext.4",
+    "org.vim.MacVim",
+    "com.qvacua.VimR",
+
+    // Multiplexers / remote
+    "com.panic.Transmit",
+
+    // Cmux
+    "com.cmuxterm.app",
+    "com.cmuxterm.app.debug",
 ]
 
 // MARK: - Regex patterns
